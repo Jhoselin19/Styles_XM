@@ -30,9 +30,17 @@ namespace Lab07
             {
                 await Navigation.PushAsync(new ImplicitControlDemo());
             };
+            Item5.Clicked += async (sender, e) =>
+            {
+                await Navigation.PushAsync(new GlobalDemo());
+            };
             Item6.Clicked += async (sender, e) =>
             {
                 await Navigation.PushAsync(new InheritanceDemo());
+            };
+            Item7.Clicked += async (sender, e) =>
+            {
+                await Navigation.PushAsync(new DynamicDemo());
             };
         }
     }
