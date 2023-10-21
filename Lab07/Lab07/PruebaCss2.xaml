@@ -3,13 +3,16 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Lab07.PruebaCss2">
     <ContentPage.Resources>
+        <!-- Se ha añadido una hoja de estilo a los recursos de la página -->
         <StyleSheet Source="/styles2.css" />
     </ContentPage.Resources>
 
     <StackLayout Padding="2,250">
+        <!-- Se ha aplicado una clase de estilo con StyleClass="titulo" -->
         <Label Text="LOGIN" StyleClass="titulo" />
         <Entry Placeholder="Nombre de usuario" />
         <Entry Placeholder="Contraseña" IsPassword="true" />
+        <!-- Se ha aplicado una clase de estilo con StyleClass="botonIniciarSesion" -->
         <Button Text="Iniciar sesión" CornerRadius="7"  StyleClass="botonIniciarSesion" />
         <Button Text="Registrarse" CornerRadius="7"  StyleClass="botonRegistrarse" />
     </StackLayout>
