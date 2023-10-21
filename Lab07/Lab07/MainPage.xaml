@@ -4,15 +4,24 @@
              x:Class="Lab07.MainPage">
 
     <StackLayout>
+        <StackLayout.Resources>
+            <ResourceDictionary>
+                <Style x:Key="ButtonBlackStyle" TargetType="Button">
+                    <Setter Property="TextColor" Value="white"></Setter>
+                </Style>
+            </ResourceDictionary>
+        </StackLayout.Resources>
+        <Label Text="MANEJO DE ESTILOS" HorizontalOptions="Center" Padding="40" TextColor="White" FontSize="24"/>
         <StackLayout>
-            <Button x:Name="Item1" Text="Explicit Demo" />
-            <Button x:Name="Item2" Text="Explicit Control Demo" />
-            <Button x:Name="Item3" Text="Implici tDemo" />
-            <Button x:Name="Item4" Text="Implicit Control Demo" />
-            <Button x:Name="Item5" Text="Global Demo" />
-            <Button x:Name="Item6" Text="Inheritance Demo" />
-            <Button x:Name="Item7" Text="DynamicDemo" />
-            <Button x:Name="Item8" Text="Prueba Css" />
+            <Button x:Name="Item1" Text="Explicit Demo" BackgroundColor="#7EAA92" Style="{StaticResource ButtonBlackStyle}"/>
+            <Button x:Name="Item2" Text="Explicit Control Demo" BackgroundColor="#96B6C5" Style="{StaticResource ButtonBlackStyle}"/>
+            <Button x:Name="Item3" Text="Implicit Demo" BackgroundColor="#FFCACC" Style="{StaticResource ButtonBlackStyle}"/>
+            <Button x:Name="Item4" Text="Implicit Control Demo" BackgroundColor="#DBC4F0" Style="{StaticResource ButtonBlackStyle}"/>
+            <Button x:Name="Item5" Text="Global Demo" BackgroundColor="#94A684" Style="{StaticResource ButtonBlackStyle}"/>
+            <Button x:Name="Item6" Text="Inheritance Demo" BackgroundColor="#AEC3AE" Style="{StaticResource ButtonBlackStyle}"/>
+            <Button x:Name="Item7" Text="Dynamic Demo" BackgroundColor="#CBB279" Style="{StaticResource ButtonBlackStyle}" />
+            <Button x:Name="Item8" Text="Prueba CSS 1" BackgroundColor="#AAC8A7" Style="{StaticResource ButtonBlackStyle}"/>
+            <Button x:Name="Item9" Text="Prueba CSS 2" BackgroundColor="#DFCCFB" Style="{StaticResource ButtonBlackStyle}" />
         </StackLayout>
     </StackLayout>
 

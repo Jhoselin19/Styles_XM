@@ -46,6 +46,10 @@ namespace Lab07
             {
                 await Navigation.PushAsync(new PruebaCss());
             };
+            Item9.Clicked += async (sender, e) =>
+            {
+                await Navigation.PushAsync(new PruebaCss2());
+            };
         }
     }
 }

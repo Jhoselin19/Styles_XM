@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Lab07.PruebaCss2">
+    <ContentPage.Resources>
+        <StyleSheet Source="/styles2.css" />
+    </ContentPage.Resources>
+
+    <StackLayout Padding="2,250">
+        <Label Text="LOGIN" StyleClass="titulo" />
+        <Entry Placeholder="Nombre de usuario" />
+        <Entry Placeholder="Contraseña" IsPassword="true" />
+        <Button Text="Iniciar sesión" CornerRadius="7"  StyleClass="botonIniciarSesion" />
+        <Button Text="Registrarse" CornerRadius="7"  StyleClass="botonRegistrarse" />
+    </StackLayout>
+</ContentPage>

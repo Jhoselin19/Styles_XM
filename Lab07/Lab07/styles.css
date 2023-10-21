@@ -1,7 +1,29 @@
-﻿/* estilos.css */
-button {
+﻿.titulo {
+    font-size: 24;
+    font-weight: bold;
+    text-align: center;
+}
+
+.botonVerMas1 {
     background-color: #008CBA; /* Azul */
-    border: none;
     color: white;
+    text-align: center;
+}
+
+.botonVerMas2 {
+    background-color: #f44336; /* Rojo */
+    color: white;
+    text-align: center;
+}
+
+.botonVerMas3 {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    text-align: center;
+}
+
+.botonVerMas4 {
+    background-color: #FFC107; /* Amarillo */
+    color: black;
     text-align: center;
 }

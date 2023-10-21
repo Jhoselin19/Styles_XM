@@ -7,8 +7,44 @@
         <StyleSheet Source="/styles.css" />
     </ContentPage.Resources>
 
-    <StackLayout>
-        <!-- Usa el estilo CSS para este botón -->
-        <Button Text="Haz clic en mí!" ClassId="button" />
-    </StackLayout>
+    <ScrollView>
+        <StackLayout StyleClass="mainLayout" Padding="50">
+            <Label Text="Animales Kawaii" StyleClass="titulo" />
+            <Grid StyleClass="galeria">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <!-- Primera fila de imágenes -->
+                <Button Grid.Row="0" Grid.Column="0" Text="Ver más" StyleClass="botonVerMas1" />
+                <Button Grid.Row="0" Grid.Column="1" Text="Ver más" StyleClass="botonVerMas2" />
+                <!-- Segunda fila de imágenes -->
+                <Button Grid.Row="1" Grid.Column="0" Text="Ver más" StyleClass="botonVerMas2"/>
+                <Button Grid.Row="1" Grid.Column="1" Text="Ver más" StyleClass="botonVerMas1"/>
+                <!-- Tercera fila de imágenes -->
+                <Button Grid.Row="2" Grid.Column="0" Text="Ver más" StyleClass="botonVerMas1"/>
+                <Button Grid.Row="2" Grid.Column="1" Text= "Ver más" StyleClass= "botonVerMas2"/>
+                <!-- Sexta fila de imágenes -->
+                <Button Grid.Row="5" Grid.Column="0" Text="Ver más" StyleClass="botonVerMas3"/>
+                <Button Grid.Row="5" Grid.Column="1" Text= "Ver más" StyleClass= "botonVerMas4"/>
+                <!-- Séptima fila de imágenes -->
+                <Button Grid.Row="6" Grid.Column="0" Text= "Ver más" StyleClass= "botonVerMas4"/>
+                <Button Grid.Row="6" Grid.Column="1" Text= "Ver más" StyleClass= "botonVerMas3"/>
+                <!-- Octava fila de imágenes -->
+                <Button Grid.Row="7" Grid.Column="0" Text= "Ver más" StyleClass= "botonVerMas3"/>
+                <Button Grid.Row="7" Grid.Column="1" Text= "Ver más" StyleClass= "botonVerMas4"/>
+            </Grid>
+        </StackLayout>
+    </ScrollView>
+
 </ContentPage>
