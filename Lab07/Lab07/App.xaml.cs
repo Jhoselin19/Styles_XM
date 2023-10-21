@@ -1,5 +1,9 @@
 ﻿using System;
+using System.Reflection;
 using Xamarin.Forms;
+using System.Collections.Generic;
+using System.Linq;
+using Xamarin.Forms.StyleSheets;
 using Xamarin.Forms.Xaml;
 
 namespace Lab07
@@ -9,6 +13,7 @@ namespace Lab07
         public App()
         {
             InitializeComponent();
+
 
             MainPage = new NavigationPage(new MainPage());
         }
